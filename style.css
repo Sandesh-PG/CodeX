@@ -118,8 +118,13 @@ body {
 
 .founder-info{
     display: inline;
-    padding-left: 16%;
-    padding-top: 5%;
+    padding-left: 12%;
+    padding-top: 3%;
+}
+
+.download-btns{
+    padding-left: 12%;
+    padding-top: 1%;
 }
 
 .Subscribe{
