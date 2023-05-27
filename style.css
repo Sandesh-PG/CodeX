@@ -116,16 +116,18 @@ body {
     color: #423F3E;
 }
 
+.download-btns{
+    padding-left: 12%;
+    padding-top: 1%;
+}
+
+
 .founder-info{
     display: inline;
     padding-left: 12%;
     padding-top: 3%;
 }
 
-.download-btns{
-    padding-left: 12%;
-    padding-top: 1%;
-}
 
 .Subscribe{
    display: grid; 
