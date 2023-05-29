@@ -1,3 +1,10 @@
+const trainingSec = $('#training');
+const dismiss = $('.btn-dismiss');
+
+function hideTrainingSection ()  {
+    trainingSec.style.display = 'none';
+};
+
 
 var carouselWidth = $('.carousel-inner')[0].scrollWidth;
 var cardWidth = $('.carousel-item').width();
