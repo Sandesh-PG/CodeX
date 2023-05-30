@@ -8,7 +8,9 @@
     <!-- FONTs -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Monomaniac+One&family=Montserrat+Subrayada&family=Rubik+Puddles&family=Shadows+Into+Light&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Monomaniac+One&family=Montserrat+Subrayada&family=Righteous&family=Rubik+Puddles&family=Shadows+Into+Light&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -66,7 +68,7 @@
                             <button class="btn btn-secondary">Sign Up</button>
                         </div>
                         <div class="nav-but">
-                            <button type="button" class="btn btn-dark btn-outline-light">Log
+                            <button id="loginBtn" type="button" class="btn btn-dark btn-outline-light">Log
                                 In</button>
                         </div>
                     </div>
@@ -75,6 +77,27 @@
             </div>
         </nav>
     </header>
+
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2 class="login-pop-text">Login</h2>
+            <img class="unknown-user" src="./images/unknown.png" alt="unknown" style="height:50px;width:50px">
+            <form>
+                <!-- Your login form fields here -->
+                <div class="username-img">
+                    <input class="login-inputs" type="text" placeholder="Username" />
+                    <img src="./images/user.png" alt="username">
+                </div>
+                <div class="username-img">
+                    <input class="login-inputs" type="password" placeholder="Password" />
+                    <img src="./images/padlock.png" alt="password">
+                </div><br>
+                <button type="submit" class="btn btn-success">Login</button>
+                <a href="#" class="forgot-pass">Forgot Password?</a>
+            </form>
+        </div>
+    </div>
 
     <!-- HOME -->
 
@@ -115,24 +138,25 @@
 
     <!-- Training -->
     <section id="training">
-    <div class="container-fluid codex-training">
-        <div class="Training">
-            <br>
-            <div class="row">
-                <div class="col-lg-9 col-md-7 col-sm-6">
-                    <h4 class="training-text text-fluid">Training 5 or more people? Get your team access to CodeX's
-                        top
-                        22,000+ courses
-                    </h4>
-                </div>
-                <div class="col-lg-3 col-md-5 col-sm-6">
-                    <button type="button" class="btn btn-light">Get Codex! Business</button>
-                    <button type="button" class="btn btn-outline-light btn-dismiss" onclick="hideTrainingSection()">Dismiss</button>
+        <div class="container-fluid codex-training">
+            <div class="Training">
+                <br>
+                <div class="row">
+                    <div class="col-lg-9 col-md-7 col-sm-6">
+                        <h4 class="training-text text-fluid">Training 5 or more people? Get your team access to CodeX's
+                            top
+                            22,000+ courses
+                        </h4>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-6">
+                        <button type="button" class="btn btn-light">Get Codex! Business</button>
+                        <button type="button" class="btn btn-outline-light btn-dismiss"
+                            onclick="hideTrainingSection()">Dismiss</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <button class="btn btn-primary btn-top"><img src="./images/up-arrow.png" alt="" width="25"
             style="filter: invert(100%);"> TOP</button>
@@ -246,6 +270,29 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
+
+    <script>
+        var loginBtn = document.getElementById("loginBtn");
+        var loginPopup = document.getElementById("loginPopup");
+        var closeBtn = document.getElementsByClassName("close")[0];
+
+        // Show the login pop-up
+        loginBtn.onclick = function () {
+            loginPopup.style.display = "block";
+        };
+
+        // Close the login pop-up when the close button is clicked
+        closeBtn.onclick = function () {
+            loginPopup.style.display = "none";
+        };
+
+        // Close the login pop-up when the user clicks outside the form
+        window.onclick = function (event) {
+            if (event.target == loginPopup) {
+                loginPopup.style.display = "none";
+            }
+        };
+    </script>
 </body>
 
 </html>

@@ -30,3 +30,16 @@ $('.btn-top').on('click', function () {
     document.documentElement.scrollTop = 0;
     // window.scrollTo(0,0);
 });
+
+var navLinks = $('.nav-link');
+var active = $('.active');
+
+for (let i = 0; i < navLinks.length; i++) {
+    $(document).on('click', '.nav-link', function() {
+        var navLinks = $('.nav-link');
+        var active = $('.active');
+      
+        active.removeClass('active');
+        $(this).addClass('active');
+      });
+}
