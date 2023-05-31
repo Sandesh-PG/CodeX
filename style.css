@@ -2,7 +2,6 @@
     --f-main: 'Abril Fatface', cursive;
 }
 
-
 * {
     padding: 0;
     margin: 0;
@@ -219,6 +218,7 @@ img {
   }
   
   .popup-content {
+    background-color: #fff;
     box-shadow: 1px 1px 5px 2px #FFFFFF;
     margin: 10% auto;
     padding: 20px;
@@ -244,12 +244,12 @@ img {
   .login-pop-text{
     font-family: 'Righteous', cursive;
     font-size: 3rem;
-    color: #fff;
+    color: #000;
     display: inline;
   }
 
   .unknown-user{
-    margin-bottom: 6%;
+    margin-bottom: 8%;
     margin-left: 15%;
   }
 
@@ -265,7 +265,7 @@ img {
     margin-bottom: 20px;
     border-bottom: 1px solid rgba(34, 229, 255, 0.575);
     border-radius: 0px;
-    color: white;
+    color: #000;
     font-family: 'Source Code Pro', monospace;
   }
   
@@ -279,7 +279,7 @@ img {
   
   .username-img img {
     position: absolute;
-    top: 49%;
+    top: 45%;
     right: 5px;
     transform: translateY(-50%);
     width: 20px;
@@ -289,4 +289,25 @@ img {
   .forgot-pass{
     float: right;
     text-decoration: none;
+    color: #000;
   }
+
+  .forgot-pass:hover{
+    color: #ff9900;
+  }
+
+  .Learning{
+    min-height: 200px;
+    background-color: #545B77;
+  }
+  
+  .User-Name{
+    font-family: 'Righteous', cursive;
+    font-size: 4.3rem;
+    font-weight: 800;
+    padding-left: 3%;
+    padding-top: 3%;
+    color: #FF0060;
+  }
+
+

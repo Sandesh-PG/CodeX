@@ -1,7 +1,7 @@
 const trainingSec = $('#training');
 const dismiss = $('.btn-dismiss');
 
-function hideTrainingSection ()  {
+function hideTrainingSection() {
     trainingSec.style.display = 'none';
 };
 
@@ -25,7 +25,7 @@ $('.carousel-control-prev').on('click', function () {
         $('.carousel-inner').animate({ scrollLeft: scrollPosition }, 600);
     }
 });
- 
+
 $('.btn-top').on('click', function () {
     document.documentElement.scrollTop = 0;
     // window.scrollTo(0,0);
@@ -35,11 +35,15 @@ var navLinks = $('.nav-link');
 var active = $('.active');
 
 for (let i = 0; i < navLinks.length; i++) {
-    $(document).on('click', '.nav-link', function() {
+    $(document).on('click', '.nav-link', function () {
         var navLinks = $('.nav-link');
         var active = $('.active');
-      
+
         active.removeClass('active');
         $(this).addClass('active');
-      });
+    });
 }
+
+var minilinks = $('.mini-links');
+var miniactive = $('.mini-active');
+
