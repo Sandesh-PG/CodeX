@@ -28,7 +28,6 @@ $('.carousel-control-prev').on('click', function () {
 
 $('.btn-top').on('click', function () {
     document.documentElement.scrollTop = 0;
-    // window.scrollTo(0,0);
 });
 
 var navLinks = $('.nav-link');
