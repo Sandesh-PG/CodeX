@@ -372,7 +372,6 @@ img {
 }
  
 .companies .text-content{
-    font-size: 1.5rem;
     font-size: clamp(1.5rem, 2.5vw, 4rem); 
     color: #fff;
     text-align: center;
@@ -392,6 +391,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.col{
+    padding: 2%;
 }
 
 /* ---Footer PAGE--- */
