@@ -41,8 +41,9 @@ for (let i = 0; i < navLinks.length; i++) {
         active.removeClass('active');
         $(this).addClass('active');
     });
-}
+};
+  
 
-var minilinks = $('.mini-links');
-var miniactive = $('.mini-active');
+
+
 

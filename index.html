@@ -25,10 +25,9 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="style.css">
 
-
 </head>
 
-<body style="cursor: url('./pointer.png'),auto;">
+<body>
     <!-- NAVBAR SECTION -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="opacity: 0.8;">
@@ -63,14 +62,17 @@
                             <a class="nav-link" href="profile.html">Profile</a>
                         </li>
                     </ul>
-                    <div class="d-flex">
-                        <div class="nav-but">
-                            <button class="btn btn-secondary">Sign Up</button>
+                        <div class="d-flex">
+                            <div class="nav-but">
+                                <button class="btn btn-secondary">Sign Up</button>
+                            </div>
+                            <div class="nav-but">
+                                <button id="loginBtn" type="button" class="btn btn-dark btn-outline-light">Log
+                                    In</button>
+                            </div>
                         </div>
-                        <div class="nav-but">
-                            <button id="loginBtn" type="button" class="btn btn-dark btn-outline-light">Log
-                                In</button>
-                        </div>
+                    <div>
+                        <input class="profile-image-holder" type="image" src="./images/creator.png" alt="">
                     </div>
                 </div>
             </div>
@@ -86,14 +88,14 @@
             <form>
                 <!-- Your login form fields here -->
                 <div class="username-img">
-                    <input class="login-inputs" type="text" placeholder="Username" />
+                    <input class="login-inputs login-user" type="text" placeholder="Username" />
                     <img src="./images/user.png" alt="username">
                 </div>
                 <div class="username-img">
-                    <input class="login-inputs" type="password" placeholder="Password" />
+                    <input class="login-inputs login-pass" type="password" placeholder="Password" />
                     <img src="./images/padlock.png" alt="password">
                 </div><br>
-                <button type="submit" class="btn btn-success">Login</button>
+                <button class="btn btn-success btn-log-click">Login</button>
                 <a href="#" class="forgot-pass">Forgot Password?</a>
             </form>
         </div>
@@ -143,7 +145,8 @@
                 <br>
                 <div class="row">
                     <div class="col-lg-9 col-md-7 col-sm-6">
-                        <h4 class="training-text text-fluid text-content">Training 5 or more people? Get your team access to CodeX's
+                        <h4 class="training-text text-fluid text-content">Training 5 or more people? Get your team
+                            access to CodeX's
                             top
                             22,000+ courses
                         </h4>
@@ -159,7 +162,7 @@
     </section>
 
     <button class="btn btn-primary btn-top"><img src="./images/up-arrow.png" alt="" width="25"
-        style="filter: invert(100%);"> TOP</button>
+            style="filter: invert(100%);"> TOP</button>
 
     <!-- COURSES -->
     <div class="container-fluid" style="background-color: #C4DFDF;">
