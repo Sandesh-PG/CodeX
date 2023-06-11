@@ -267,6 +267,23 @@ img {
     cursor: pointer;
 }
 
+/* RECOMMENDED COURSES */
+.courses{
+    padding: 3%;
+    /* padding-top: 0; */
+}
+
+.course-img{
+    width:100%;
+    min-height: 170px;
+    height:auto;
+}
+
+.course-card{
+    padding-bottom: 2%;
+}
+
+
 /* Profile Page*/
 .popup {
     display: none;
