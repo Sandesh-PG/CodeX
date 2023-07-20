@@ -47,7 +47,7 @@ body {
 
 /* Utilities */
 .h-5 {
-  color: #fff;
+  color: #000;
   font-style: poppins;
 }
 
@@ -65,6 +65,10 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.d-none {
+  display: none;
 }
 
 /* ---NAVBAR--- */
@@ -289,21 +293,42 @@ img {
 .course-card {
   padding-bottom: 2%;
   cursor: pointer;
+  position: relative;
+  transition: 0.2s ease;
 }
 
-.card-info1 {
+.card-info {
   max-width: 350px;
   height: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   position: absolute;
-  left: 10px;
-  bottom: 5px;
+  left: 0px;
+  bottom: 0px;
   padding: 25px;
   box-shadow: 0 0 5px 2px grey;
+  -webkit-box-shadow: 1px -1px 20px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px -1px 20px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px -1px 20px 5px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
   display: none;
 }
 
-.course-card1:hover + .card-info1 {
+.c-1:hover > .cf-1 {
+  display: block;
+  color: #000;
+}
+
+.c-2:hover > .cf-2 {
+  display: block;
+  color: #000;
+}
+
+.c-3:hover > .cf-3 {
+  display: block;
+  color: #000;
+}
+
+.c-4:hover > .cf-4 {
   display: block;
   color: #000;
 }
@@ -311,17 +336,6 @@ img {
 .btn-info {
   margin-top: 5%;
   width: 80%;
-}
-
-.btn-info::after {
-  content: "";
-  position: absolute;
-  height: 28px;
-  width: 28px;
-  background-image: url(images/cart.png);
-  background-size: cover;
-  right: 20px;
-  bottom: 32px;
 }
 
 /* TOPICS */
