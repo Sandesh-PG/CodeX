@@ -97,6 +97,11 @@ body {
   display: block;
 }
 
+.navbar-toggler{
+  background-color: #fff;
+  filter: invert(100%);
+}
+
 .text-dec {
   text-decoration: none;
 }
@@ -136,6 +141,13 @@ header {
 
 /* ---HOME SECTION--- */
 
+.home-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
 .main-header {
   text-align: center;
   font-size: clamp(4rem, 2vw, 1rem);
@@ -144,6 +156,13 @@ header {
   padding-left: 16%;
   padding-top: 5%;
   color: #4e4feb;
+}
+
+.intro-heading{
+  width: 72%;
+  color: #fff;
+  margin: auto;
+  
 }
 
 .home-para {
